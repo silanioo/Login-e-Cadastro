@@ -39,7 +39,7 @@ if (($result) and ($result->num_rows != 0) ) {
         if(($dados[$i]['nome'] == $Nome) && ($dados[$i]['email'] == $Email)){
                 
             $dadoExiste = true;
-            echo '<script> alert("Este pagamento foi cadastrado anteriormente!"); const win = window.open("../html/index.html","_self"); </script>';
+            echo '<script> alert("Este pagamento foi cadastrado anteriormente!"); const win = window.open("index.html","_self"); </script>';
         }
     }
     //SE O USUÁRIO NÃO EXITE ENTÃO ELE REGISTRA
@@ -53,7 +53,7 @@ if (($result) and ($result->num_rows != 0) ) {
             
         if ($result2) {
             //MOSTRAR NA TELA SE O CADASTRO FOI REALIZADO
-            echo '<script> alert("Usuario registrado!"); const win = window.open("../html/index.html","_self"); </script>';
+            echo '<script> alert("Usuario registrado!"); const win = window.open("index.html","_self"); </script>';
             
         }
     }
@@ -70,7 +70,7 @@ else if (($result) and ($result->num_rows == 0) ) {
         
     if ($result3) {
         //MOSTRAR NA TELA SE O CADASTRO FOI REALIZADO
-        echo '<script> alert("Usuario cadastrado!!"); const win = window.open("../html/index.html","_self"); </script>';
+        echo '<script> alert("Usuario cadastrado!!"); const win = window.open("index.html","_self"); </script>';
     }
 }
      
